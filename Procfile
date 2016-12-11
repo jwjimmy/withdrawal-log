@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath wlinterf/ drinks.wsgi --log-file -
+web: gunicorn --pythonpath wlinterf/ wlinterf.wsgi --log-file -
