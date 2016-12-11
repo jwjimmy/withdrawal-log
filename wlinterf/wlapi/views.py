@@ -40,3 +40,7 @@ class VisitCreate(CreateView):
 
     model = Visit
     fields = ['visited_at', 'reason']
+
+class HomeView(TemplateView):
+
+    template_name = 'wlapi/home.html'
