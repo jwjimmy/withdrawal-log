@@ -1,7 +1,9 @@
+{% csrf_token %}
+
 <h1>Visits</h1>
 
 <ul>
   {% for visit in object_list %}
-    <li class="visit">{{ visit }}</li>
+    <li class="visit">{{ visit.visited_at }} {{ visit.reason }}</li>
   {% endfor %}
 </ul>

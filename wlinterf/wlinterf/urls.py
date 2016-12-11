@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from wlapi.views import VisitView
+from wlapi.views import VisitCreate
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^visits/$', VisitView.as_view()),
+    url(r'^visits/create$', VisitCreate.as_view(success_url="/visits")),
 ]

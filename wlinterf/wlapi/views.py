@@ -3,7 +3,8 @@ from django.views.generic import TemplateView
 from django.views.generic import ListView
 from wlapi.models import Visit
 from django.http import JsonResponse
-
+from django.views.generic.edit import CreateView
+#from django.views.decorators.csrf import ensure_csrf_cookie
 
 # Create your views here.
 
@@ -31,13 +32,11 @@ class JSONResponseMixin(object):
         # -- can be serialized as JSON.
         return context
 
-class VisitView(JSONResponseMixin, ListView):
+class VisitView(ListView):
 
     model = Visit
 
-    def post(self, request, *args, **kwargs):
-        visited_at = request.POST.get('date')
-        reason = request.POST.get('reason')
+class VisitCreate(CreateView):
 
-        Visit.objects.create(visited_at=visited_at, reason=reason)
-        
+    model = Visit
+    fields = ['visited_at', 'reason']
