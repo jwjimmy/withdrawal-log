@@ -2,8 +2,8 @@
 
 Intro
 -----
-YouTube has made it too easy for me to enter the unending spiral of watching videos. [cold-turkey](https://github.com/JimmyFW/cold-turkey) is a Chrome extension that alters my YouTube interface to help me change my behavior. It also tracks my behavior so I can get feedback on my habits.
+YouTube has made it too easy for me to enter the unending spiral of video-watching. I'm running an experiment to change my browsing behavior. I built a Chrome extension called [cold-turkey](https://github.com/JimmyFW/cold-turkey) to alter my YouTube interface and challenge me to record my reasons for using the app.
 
 withdrawal-log
 -----
-This Django app serves as the backend to cold-turkey. It stores YouTube visits and reasons for visiting.
+This Django app serves as the backend to cold-turkey. It stores my YouTube visits and reasons for visiting.
