@@ -27,7 +27,7 @@ SECRET_KEY = 'o6gg)77l7lt7&%tqd5i65b#ztm9@x4bh4)n$fnegcj%+4woinb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'withdrawal-log.herokuapp.com', 'youtube.com']
+ALLOWED_HOSTS = ['localhost', 'withdrawal-log.herokuapp.com', '.youtube.com']
 
 
 # Application definition
