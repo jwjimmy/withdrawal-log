@@ -16,7 +16,7 @@ class VisitView(ListView):
 class VisitCreate(CreateView):
 
     model = Visit
-    fields = ['visited_at', 'reason']
+    fields = ['reason']
 
 class HomeView(TemplateView):
 
