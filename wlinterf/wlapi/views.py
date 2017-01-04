@@ -7,10 +7,6 @@ from django.views.generic.edit import CreateView
 
 # Create your views here.
 
-class VisitView(ListView):
-
-    model = Visit
-
 class VisitCreate(CreateView):
 
     model = Visit

@@ -6,3 +6,6 @@ from django.db import models
 class Visit(models.Model):
 	visited_at = models.DateTimeField(auto_now_add=True)
 	reason = models.CharField(max_length=1000)
+
+	def __unicode__(self):
+		return self.reason
