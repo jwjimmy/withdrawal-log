@@ -22,5 +22,5 @@ from django.views.decorators.csrf import csrf_exempt
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view()),
-    url(r'^visits/create$', csrf_exempt(VisitCreate.as_view())),
+    url(r'^visits/create$', csrf_exempt(VisitCreate.as_view(success_url="/visits/create"))),
 ]
