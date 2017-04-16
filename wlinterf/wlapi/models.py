@@ -9,3 +9,6 @@ class Visit(models.Model):
 
 	def __unicode__(self):
 		return self.reason
+
+class Hit(models.Model):
+	visited_at = models.DateTimeField(auto_now_add=True)

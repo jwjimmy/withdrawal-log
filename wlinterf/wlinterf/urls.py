@@ -16,11 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from wlapi.views import HomeView
-from wlapi.views import VisitCreate
+from wlapi.views import VisitCreate, HitCreate
 from django.views.decorators.csrf import csrf_exempt
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view()),
     url(r'^visits/create$', csrf_exempt(VisitCreate.as_view(success_url="/visits/create"))),
+    url(r'^hits/create$', csrf_exempt(HitCreate.as_view(success_url="/hits/create"))),
 ]
