@@ -15,7 +15,7 @@ class VisitCreate(CreateView):
 class HitCreate(CreateView):
 
     model = Hit
-    fields = ['visited_at']
+    fields = []
 
 class HomeView(TemplateView):
 
